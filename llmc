@@ -10,5 +10,5 @@ podman run \
       -v $HOME/.cache/opencode:/root/.cache/opencode \
       -v $PWD:$PWD \
       -w $PWD \
-      opencode-sandbox:latest \
+      llmc:latest \
       opencode
