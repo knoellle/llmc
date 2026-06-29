@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+podman run \
+      -it \
+      --rm \
+      --userns=keep-id \
+      --init \
+      -v $HOME/.config/opencode:/home/user/.config/opencode \
+      -v $HOME/.local/share/opencode:/home/user/.local/share/opencode \
+      -v $HOME/.local/state/opencode:/home/user/.local/state/opencode \
+      -v $HOME/.cache/opencode:/root/.cache/opencode \
+      -v $PWD:$PWD \
+      -w $PWD \
+      opencode-sandbox:latest \
+      opencode
