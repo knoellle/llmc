@@ -8,6 +8,7 @@ podman run \
       -v $HOME/.local/share/opencode:/root/.local/share/opencode \
       -v $HOME/.local/state/opencode:/root/.local/state/opencode \
       -v $HOME/.cache/opencode:/root/.cache/opencode \
+      -v $HOME/hulks/hulk:$HOME/hulks/hulk \
       -v $PWD:$PWD \
       -w $PWD \
       llmc:latest \
