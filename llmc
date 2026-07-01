@@ -12,4 +12,4 @@ podman run \
       -v $PWD:$PWD \
       -w $PWD \
       llmc:latest \
-      opencode
+      bash
