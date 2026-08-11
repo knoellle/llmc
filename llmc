@@ -4,6 +4,7 @@ podman run \
       -it \
       --rm \
       --init \
+      --device /dev/fuse \
       -v $HOME/.config/opencode:/root/.config/opencode \
       -v $HOME/.local/share/opencode:/root/.local/share/opencode \
       -v $HOME/.local/state/opencode:/root/.local/state/opencode \
